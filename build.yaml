@@ -18,45 +18,9 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
-#include:
- # - board: nice_nano_v2
-  #  shield: corne_left
+include:
+  - board: nice_nano_v2
+    shield: corne_left
   
-  #- board: nice_nano_v2
-   # shield: corne_right
-
-name: Build ZMK firmware
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build_central:
-    name: Build Chocofi Left (Central)
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install dependencies
-        uses: zmkfirmware/zmk@main
-
-      - name: Build (Central / Left)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=chocofi -DCONFIG_ZMK_SPLIT_BLE_ROLE_CENTRAL=y
-
-  build_peripheral:
-    name: Build Chocofi Right (Peripheral)
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install dependencies
-        uses: zmkfirmware/zmk@main
-
-      - name: Build (Peripheral / Right)
-        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=chocofi -DCONFIG_ZMK_SPLIT_BLE_ROLE_PERIPHERAL=y
-
+  - board: nice_nano_v2
+    shield: corne_right
