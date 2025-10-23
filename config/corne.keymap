@@ -64,10 +64,10 @@
             display-name = "Default Layer";
 
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  R  |  S  |  T  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U  |  Y  |  ;  |
+            // |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E  |  I  |  O  |
+            // |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  .  |  ?  |  '  |
+            //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
 &none  &kp Q        &kp W        &kp F           &kp P           &kp G    &kp J  &kp L            &kp U              &kp Y             &mt COLON SEMI                  &none
@@ -83,10 +83,10 @@
             display-name = "Num";
 
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  ~  |  &  |  #  |  {  |  <  |   | CAL |  7  |  8  |  9  |  -  |
+            // |  %  |  !  |  $  |  @  |  (  |   |  .  |  4  |  5  |  6  |  +  |
+            // |  `  |  |  |  \  |  _  |  [  |   |  0  |  1  |  2  |  3  |  /  | 
+            //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
 &none  &kp TILDE    &kp AMPS  &kp HASH       &mt RIGHT_BRACE LEFT_BRACE  &mt GT LT        &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS  &none
@@ -100,10 +100,10 @@
             display-name = "Nav";
 
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
+            // |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
+            // |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
+            //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
 &none  &none          &kp LS(LG(S))     &mt LG(LA(UP)) LG(UP_ARROW)  &mt LA(RIGHT) LA(LEFT)  &kp LC(LS(TAB))    &kp C_VOLUME_UP  &kp HOME          &kp UP                    &kp END            &kp PAGE_UP    &none
