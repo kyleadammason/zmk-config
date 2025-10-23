@@ -16,7 +16,7 @@
 
         SettingLayer {
             bindings = <&mo 3>;
-            key-positions = <38 39>;
+            key-positions = <32 33>;
             layers = <1 2 3 0>;
         };
 
