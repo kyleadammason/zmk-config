@@ -22,37 +22,37 @@
 
         Esc_combo {
             bindings = <&kp ESC>;
-            key-positions = <2 3>;
+            key-positions = <1 2>;
             layers = <1 0 2 3>;
         };
 
         Tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <26 27>;
+            key-positions = <21 22>;
             layers = <1 2 0 3>;
         };
 
         Bspace_combo {
             bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             layers = <0 2 3 1>;
         };
 
         Enter_combo {
             bindings = <&kp ENTER>;
-            key-positions = <32 33>;
+            key-positions = <27 28>;
             layers = <3 0 1 2>;
         };
 
         LC_combo {
             bindings = <&mkp LCLK>;
-            key-positions = <17 16>;
+            key-positions = <13 14>;
             layers = <3 2 1 0>;
         };
 
         RC_combo {
             bindings = <&mkp RCLK>;
-            key-positions = <5 4>;
+            key-positions = <3 4>;
             layers = <0 2 3 1>;
         };
     };
