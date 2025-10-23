@@ -1,0 +1,16 @@
+/ {
+    compatible = "zmk,keyboard";
+    label = "CHOCOLATE_FI";
+
+    key_matrix {
+        compatible = "zmk,matrix-transform";
+        col-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>,
+                    <&gpio0 3 GPIO_ACTIVE_LOW>,
+                    <&gpio0 4 GPIO_ACTIVE_LOW>,
+                    <&gpio0 5 GPIO_ACTIVE_LOW>,
+                    <&gpio0 6 GPIO_ACTIVE_LOW>;
+        row-gpios = <&gpio1 10 GPIO_ACTIVE_LOW>,
+                    <&gpio1 11 GPIO_ACTIVE_LOW>,
+                    <&gpio1 12 GPIO_ACTIVE_LOW>;
+    };
+};

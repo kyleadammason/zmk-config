@@ -1,0 +1,5 @@
+file_format: "1"
+id: chocofi
+name: Chocofi Split 5x3_3
+type: shield
+requires: [nice_nano_v2]
