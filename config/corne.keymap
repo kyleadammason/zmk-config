@@ -55,6 +55,42 @@
             key-positions = <4 5>;
             layers = <0>;
         };
+
+        Nav_Previous_Tab_Combo {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <13 7>;
+            layers = <4>;
+        };
+
+        Nav_Next_Tab_Combo {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <13 17>;
+            layers = <4>;
+        };
+
+        Nav_Browser_Back_Combo {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <13 16>;
+            layers = <4>;
+        };
+
+        Nav_Browser_Fwd_Combo {
+            bindings = <&kp LA(RIGHT)>;
+            key-positions = <13 18>;
+            layers = <4>;
+        };
+
+        Nav_Browser_CloseTab_Combo {
+            bindings = <&kp LC(W)>;
+            key-positions = <13 8>;
+            layers = <4>;
+        };
+
+        Nav_Browser_NewTab_Combo {
+            bindings = <&kp LC(T)>;
+            key-positions = <13 6>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -119,6 +155,15 @@
 &trans  &trans  &trans  &trans      &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans      &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans      &trans        &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
