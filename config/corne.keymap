@@ -69,9 +69,9 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&none  &kp Q        &kp W        &kp F           &kp P           &kp G    &kp J  &kp L            &kp U              &kp Y             &mt COLON SEMI                  &none
-&none  &mt LC(A) A  &kp R        &mt LEFT_ALT S  &mt LEFT_WIN T  &kp D    &kp H  &mt RIGHT_WIN N  &mt RIGHT_ALT E    &kp I             &kp O                           &none
-&none  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C     &mt LC(V) V     &kp B    &kp K  &kp M            &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE  &none
+&kp Q        &kp W        &kp F           &kp P           &kp G    &kp J  &kp L            &kp U              &kp Y             &mt COLON SEMI                  
+&mt LC(A) A  &kp R        &mt LEFT_ALT S  &mt LEFT_WIN T  &kp D    &kp H  &mt RIGHT_WIN N  &mt RIGHT_ALT E    &kp I             &kp O                           
+&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C     &mt LC(V) V     &kp B    &kp K  &kp M            &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE  
                                  &kp DEL         &kp LEFT_SHIFT  &mo 1    &mo 2  &kp SPACE        &kp RCTRL
             >;
 
@@ -88,9 +88,9 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&none  &kp TILDE    &kp AMPS  &kp HASH       &mt RIGHT_BRACE LEFT_BRACE  &mt GT LT        &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS  &none
-&none  &kp PERCENT  &kp EXCL  &kp DOLLAR     &kp AT                      &mt RPAR LPAR    &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   &none
-&none  &kp GRAVE    &kp PIPE  &kp BACKSLASH  &kp UNDERSCORE              &mt RBKT LBKT    &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &none
+&kp TILDE    &kp AMPS  &kp HASH       &mt RIGHT_BRACE LEFT_BRACE  &mt GT LT        &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS  
+&kp PERCENT  &kp EXCL  &kp DOLLAR     &kp AT                      &mt RPAR LPAR    &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS   
+&kp GRAVE    &kp PIPE  &kp BACKSLASH  &kp UNDERSCORE              &mt RBKT LBKT    &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  
                               &kp DEL        &kp LEFT_SHIFT              &trans           &trans             &kp SPACE     &kp RCTRL
             >;
         };
@@ -105,18 +105,18 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&none  &none          &kp LS(LG(S))     &mt LG(LA(UP)) LG(UP_ARROW)  &mt LA(RIGHT) LA(LEFT)  &kp LC(LS(TAB))    &kp C_VOLUME_UP  &kp HOME          &kp UP                    &kp END            &kp PAGE_UP    &none
-&none  &kp LG(LA(K))  &kp LG(LEFT)      &mt LG(DOWN) LG(LA(DOWN))    &kp LG(RIGHT)           &kp LC(TAB)        &kp C_VOL_DN     &kp LEFT          &kp DOWN                  &kp RIGHT          &kp PAGE_DOWN  &none
-&none  &kp LS(LC(O))  &kp LS(LG(LEFT))  &mt LA(F4) LC(N)             &kp LG(LS(RIGHT))       &mt LC(W) LC(T)    &kp C_MUTE       &kp LG(LC(LEFT))  &mt LG(LC(F4)) LG(LC(D))  &kp LG(LC(RIGHT))  &bl BL_TOG     &none
+&none          &kp LS(LG(S))     &mt LG(LA(UP)) LG(UP_ARROW)  &mt LA(RIGHT) LA(LEFT)  &kp LC(LS(TAB))    &kp C_VOLUME_UP  &kp HOME          &kp UP                    &kp END            &kp PAGE_UP    
+&kp LG(LA(K))  &kp LG(LEFT)      &mt LG(DOWN) LG(LA(DOWN))    &kp LG(RIGHT)           &kp LC(TAB)        &kp C_VOL_DN     &kp LEFT          &kp DOWN                  &kp RIGHT          &kp PAGE_DOWN  
+&kp LS(LC(O))  &kp LS(LG(LEFT))  &mt LA(F4) LC(N)             &kp LG(LS(RIGHT))       &mt LC(W) LC(T)    &kp C_MUTE       &kp LG(LC(LEFT))  &mt LG(LC(F4)) LG(LC(D))  &kp LG(LC(RIGHT))  &bl BL_TOG     
                                         &kp DEL                      &kp LSHFT               &trans             &trans           &kp SPACE         &kp RCTRL
             >;
         };
 
         layer_3 {
             bindings = <
-&none  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans      &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans  &none
+&trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans 
+&trans  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &trans 
+&trans  &trans  &trans  &trans      &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans  
                        &trans  &trans      &trans          &trans  &trans  &trans
             >;
         };
