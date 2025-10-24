@@ -5,7 +5,6 @@
     "default_transform": {
       "name": "default_transform",
       "layout": [
-        // Left side 3x5 grid
         { "label": "Tab", "row": 0, "col": 0, "x": 0, "y": 0.36 },
         { "label": "Q", "row": 0, "col": 1, "x": 1, "y": 0.36 },
         { "label": "W", "row": 0, "col": 2, "x": 2, "y": 0.11 },
@@ -24,12 +23,10 @@
         { "label": "C", "row": 2, "col": 3, "x": 3, "y": 1.985 },
         { "label": "V", "row": 2, "col": 4, "x": 4, "y": 2.11 },
 
-        // Left side +3 thumb keys
         { "label": "GUI", "row": 3, "col": 0, "x": 0.5, "y": 3.13, "r": 0 },
         { "label": "LWR", "row": 3, "col": 1, "x": 1.5, "y": 3.13, "r": 15 },
         { "label": "SPC", "row": 3, "col": 2, "x": 2.5, "y": 2.63, "r": 30, "h": 1.5 },
 
-        // Right side 3x5 grid
         { "label": "G", "row": 0, "col": 0, "x": 9, "y": 0.235 },
         { "label": "J", "row": 0, "col": 1, "x": 10, "y": 0.11 },
         { "label": "L", "row": 0, "col": 2, "x": 11, "y": -0.015 },
@@ -48,7 +45,6 @@
         { "label": ".", "row": 2, "col": 3, "x": 12, "y": 2.11 },
         { "label": "/", "row": 2, "col": 4, "x": 13, "y": 2.36 },
 
-        // Right side +3 thumb keys
         { "label": "ENT", "row": 3, "col": 0, "x": 10.5, "y": 2.63, "r": -30, "h": 1.5 },
         { "label": "RSE", "row": 3, "col": 1, "x": 11.5, "y": 3.13, "r": -15 },
         { "label": "ALT", "row": 3, "col": 2, "x": 12.5, "y": 3.13, "r": 0 }
