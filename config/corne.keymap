@@ -239,19 +239,10 @@
         Nav_Window_SnapRight_Combo: Nav_Window_SnapRight_Combo {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_WINDOW_SNAPRIGHT_COMBO";
-            bindings = <&kp B>, <&Nav_Screen_MoveRight_MM>;
+            bindings = <&kp B>, <&none>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_RCTL|MOD_RALT)>;
-        };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NEW_BEHAVIOR";
-            bindings = <&kp A>, <&kp LA(RIGHT_ARROW)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RCTL)>;
         };
 
         Nav_Screen_MoveRight_MM: Nav_Screen_MoveRight_MM {
@@ -260,7 +251,7 @@
             bindings = <&kp C>, <&kp D>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_RCTL|MOD_RALT|MOD_RGUI)>;
+            mods = <(MOD_RGUI)>;
         };
     };
 
