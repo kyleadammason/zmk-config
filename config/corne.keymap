@@ -173,31 +173,6 @@
     };
 
     behaviors {
-        morph_right: morph_right {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT>, <&morph_right_2>;
-            mods = <(MOD_RSFT)>;
-        };
-        morph_right_2: morph_right_2 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LA(RIGHT)>, <&morph_up_3>;
-            mods = <(MOD_RCTL)>;
-        };
-        morph_right_3: morph_right_3 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT)>, <&morph_up_4>;
-            mods = <(MOD_RALT)>;
-        };
-        morph_right_4: morph_right_4 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(RIGHT))>, <&kp LG(LC(RIGHT))>;
-            mods = <(MOD_RGUI)>;
-        };
-
         Nav_Previous_Tab_MM: Nav_Previous_Tab_MM {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_PREVIOUS_TAB_MM";
