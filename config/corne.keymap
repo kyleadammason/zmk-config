@@ -178,14 +178,14 @@
             label = "UP_MORPH";
             #binding-cells = <0>;
             bindings = <
-                &kp UP
-                &kp LS(LC(TAB))        // When Shift is held
+                &kp UP,
+                &kp LS(LC(TAB)),        // When Shift is held
                 &kp LA(LG(UP_ARROW))         // When GUI is held
                 //&kp        // When Ctrl is held
                 //&kp SHFT_UP      // When Alt is held
             >;
 
-            mods = <(MOD_RSFT) (MOD_RGUI)>;
+            mods = <(MOD_RSFT) | (MOD_RGUI)>;
         };
 
         Nav_Previous_Tab_MM: Nav_Previous_Tab_MM {
