@@ -176,7 +176,7 @@
         UP_MORPH: UP_MORPH {
             compatible = "zmk,behavior-mod-morph";
             label = "UP_MORPH";
-            bindings = <&kp UP, &kp LC(LS(TAB)), &kp LA(LG(UP_ARROW))
+            bindings = <&kp UP, &kp LC(LS(TAB)))
             >;
 
             #binding-cells = <0>;
