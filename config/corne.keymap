@@ -271,7 +271,7 @@
 &kp Q        &kp W        &kp F           &kp P           &kp G  &kp J  &kp L            &kp U              &kp Y             &mt COLON SEMI
 &mt LC(A) A  &kp R        &mt LEFT_ALT S  &mt LEFT_WIN T  &kp D  &kp H  &mt RIGHT_WIN N  &mt RIGHT_ALT E    &kp I             &kp O
 &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C     &mt LC(V) V     &kp B  &kp K  &kp M            &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
-                          &kp DEL         &kp LEFT_SHIFT  &mo 1  &mo 4  &kp SPACE        &kp RCTRL
+                          &kp DEL         &kp LEFT_SHIFT  &mo 1  &mo 2  &kp SPACE        &kp RCTRL
             >;
 
             label = "Alpha";
@@ -318,6 +318,8 @@
 &trans  &trans  &trans  &trans      &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans      &trans        &trans  &trans  &trans
             >;
+
+            label = "Settings";
         };
 
         layer_4 {
@@ -327,6 +329,8 @@
 &trans     &trans        &trans            &trans              &kp LS(LG(S))  &kp C_MUTE       &trans    &trans        &trans     &trans
                          &trans            &trans              &trans         &trans           &trans    &trans
             >;
+
+            label = "Nav_Combos";
         };
 
         Nav_2.0 {
@@ -336,6 +340,8 @@
 &trans                     &trans                 &trans            &trans              &kp LS(LG(S))  &kp C_MUTE       &trans    &trans        &trans         &trans
                                                   &trans            &trans              &trans         &trans           &trans    &trans
             >;
+
+            label = "Nav_Morph";
         };
     };
 };
