@@ -206,7 +206,7 @@
             bindings = <&kp A>, <&Nav_Window_SnapRight_Combo>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_RCTL)>;
+            mods = <(MOD_RCTL)>;
         };
 
         Nav_Browser_CloseTab_MM: Nav_Browser_CloseTab_MM {
