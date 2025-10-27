@@ -185,7 +185,7 @@
         Nav_Next_Tab_MM: Nav_Next_Tab_MM {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_NEXT_TAB_MM";
-            bindings = <&kp LC(TAB)>, <&Nav_Window_SnapRight_Combo>;
+            bindings = <&kp LC(TAB)>, <&Nav_Window_SnapRight_MM>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_RCTL)>;
@@ -203,7 +203,7 @@
         Nav_Browser_Fwd_MM: Nav_Browser_Fwd_MM {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_BROWSER_FWD_MM";
-            bindings = <&kp A>, <&Nav_Window_SnapRight_Combo>;
+            bindings = <&kp A>, <&Nav_Window_SnapRight_MM>;
 
             #binding-cells = <0>;
             mods = <(MOD_RCTL)>;
@@ -236,9 +236,9 @@
             mods = <(MOD_RSFT)>;
         };
 
-        Nav_Window_SnapRight_Combo: Nav_Window_SnapRight_Combo {
+        Nav_Window_SnapRight_MM: Nav_Window_SnapRight_MM {
             compatible = "zmk,behavior-mod-morph";
-            label = "NAV_WINDOW_SNAPRIGHT_COMBO";
+            label = "NAV_WINDOW_SNAPRIGHT_MM";
             bindings = <&kp B>, <&Nav_Screen_MoveRight_MM>;
 
             #binding-cells = <0>;
@@ -271,7 +271,7 @@
 &kp Q        &kp W        &kp F           &kp P           &kp G  &kp J  &kp L            &kp U              &kp Y             &mt COLON SEMI
 &mt LC(A) A  &kp R        &mt LEFT_ALT S  &mt LEFT_WIN T  &kp D  &kp H  &mt RIGHT_WIN N  &mt RIGHT_ALT E    &kp I             &kp O
 &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C     &mt LC(V) V     &kp B  &kp K  &kp M            &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
-                          &kp DEL         &kp LEFT_SHIFT  &mo 1  &mo 5  &kp SPACE        &kp RCTRL
+                          &kp DEL         &kp LEFT_SHIFT  &mo 1  &mo 4  &kp SPACE        &kp RCTRL
             >;
 
             label = "Alpha";
