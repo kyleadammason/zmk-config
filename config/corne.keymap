@@ -173,6 +173,15 @@
     };
 
     behaviors {
+        morph_right: morph_right {
+            compatible = "zmk,behavior-mod-morph";
+            label: "morph_right";
+            bindings = <&kp RIGHT_ARROW>, <&kp RIGHT_ARROW>, <&kp RIGHT_ARROW>, <&kp RIGHT_ARROW>, <&kp RIGHT_ARROW>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_RCTL|MOD_RGUI|MOD_RALT)>;
+        };
+
         Nav_Previous_Tab_MM: Nav_Previous_Tab_MM {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_PREVIOUS_TAB_MM";
