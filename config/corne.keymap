@@ -203,10 +203,10 @@
         Nav_Browser_Fwd_MM: Nav_Browser_Fwd_MM {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_BROWSER_FWD_MM";
-            bindings = <&kp RIGHT_ARROW>, <&kp LA(RIGHT_ARROW)>;
+            bindings = <&kp A>, <&Nav_Window_SnapRight_Combo>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
+            mods = <(MOD_RSFT|MOD_RCTL)>;
         };
 
         Nav_Browser_CloseTab_MM: Nav_Browser_CloseTab_MM {
@@ -239,10 +239,10 @@
         Nav_Window_SnapRight_Combo: Nav_Window_SnapRight_Combo {
             compatible = "zmk,behavior-mod-morph";
             label = "NAV_WINDOW_SNAPRIGHT_COMBO";
-            bindings = <&kp B>, <&none>;
+            bindings = <&kp B>, <&Nav_Screen_MoveRight_MM>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_RCTL)>;
+            mods = <(MOD_RSFT|MOD_RCTL|MOD_RALT)>;
         };
 
         new_behavior: new_behavior {
