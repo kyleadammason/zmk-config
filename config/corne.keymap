@@ -219,22 +219,13 @@
             mods = <(MOD_RSFT)>;
         };
 
-        Nav_Right_MM: Nav_Right_MM {
+        Nav_Screen_MoveRight_MM: Nav_Screen_MoveRight_MM {
             compatible = "zmk,behavior-mod-morph";
-            label = "NAV_RIGHT_MM";
-            bindings = <&kp RIGHT_ARROW>, <&Nav_Browser_Fwd_MM>;
+            label = "NAV_SCREEN_MOVERIGHT_MM";
+            bindings = <&kp C>, <&kp D>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RSFT)>;
-        };
-
-        Nav_Browser_Fwd_MM: Nav_Browser_Fwd_MM {
-            compatible = "zmk,behavior-mod-morph";
-            label = "NAV_BROWSER_FWD_MM";
-            bindings = <&kp A>, <&Nav_Window_SnapRight_MM>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RCTL)>;
+            mods = <(MOD_RGUI)>;
         };
 
         Nav_Window_SnapRight_MM: Nav_Window_SnapRight_MM {
@@ -246,13 +237,22 @@
             mods = <(MOD_RALT)>;
         };
 
-        Nav_Screen_MoveRight_MM: Nav_Screen_MoveRight_MM {
+        Nav_Browser_Fwd_MM: Nav_Browser_Fwd_MM {
             compatible = "zmk,behavior-mod-morph";
-            label = "NAV_SCREEN_MOVERIGHT_MM";
-            bindings = <&kp C>, <&kp D>;
+            label = "NAV_BROWSER_FWD_MM";
+            bindings = <&kp A>, <&Nav_Window_SnapRight_MM>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            mods = <(MOD_RCTL)>;
+        };
+
+        Nav_Right_MM: Nav_Right_MM {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NAV_RIGHT_MM";
+            bindings = <&kp RIGHT_ARROW>, <&Nav_Browser_Fwd_MM>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
