@@ -283,18 +283,18 @@
 
             bindings = <
 &none         &none      &none         &none           &none      &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
-&sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp EQUAL  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK
-&none         &none      &none         &kp SLASH       &none      &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp ASTRK  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&none         &none      &none         &none           &kp EQUAL  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
                          &kp DEL       &kp LEFT_SHIFT  &trans     &trans             &kp SPACE     &kp RCTRL
             >;
         };
 
         Symbols {
             bindings = <
-&kp TILDE    &kp LBKT  &kp LBRC    &kp LEFT_PARENTHESIS  &kp LT     &kp GT   &kp RIGHT_PARENTHESIS  &kp RBRC   &kp RBKT   &kp MINUS
-&kp PERCENT  &kp EXCL  &kp DOLLAR  &kp AT                &kp EQUAL  &kp DOT  &sk LSHFT              &sk LGUI   &sk LCTRL  &sk LALT
-&kp GRAVE    &kp PIPE  &kp BSLH    &kp FSLH              &kp UNDER  &none    &none                  &none      &none      &kp PLUS
-                       &kp DELETE  &kp LEFT_SHIFT        &trans     &trans   &kp SPACE              &kp RCTRL
+&none        &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none      &kp BACKSLASH  &kp LT          &kp GT           &none     &kp MINUS
+&kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &kp DOT        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp SLASH
+&none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL  &none          &none           &none            &none     &kp PLUS
+                        &kp DELETE            &kp LEFT_SHIFT         &trans     &trans         &kp SPACE       &kp RCTRL
             >;
 
             label = "Sym";
