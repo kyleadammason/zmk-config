@@ -41,7 +41,7 @@
         };
 
         caps_combo {
-            bindings = <&caps>;
+            bindings = <&kp CAPS>;
             key-positions = <4 5>;
             layers = <0>;
         };
