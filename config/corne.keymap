@@ -10,11 +10,6 @@
     combos {
         compatible = "zmk,combos";
 
-        SettingLayer {
-            bindings = <&mo 3>;
-            key-positions = <32 33>;
-        };
-
         Esc_combo {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
@@ -54,121 +49,121 @@
         Nav_Previous_Tab_Combo {
             bindings = <&kp LC(LS(TAB))>;
             key-positions = <13 7>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Next_Tab_Combo {
             bindings = <&kp LC(TAB)>;
             key-positions = <13 17>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Browser_Back_Combo {
             bindings = <&kp LA(LEFT_ARROW)>;
             key-positions = <13 16>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Browser_Fwd_Combo {
             bindings = <&kp LA(RIGHT)>;
             key-positions = <13 18>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Browser_CloseTab_Combo {
             bindings = <&kp LC(W)>;
             key-positions = <13 8>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Browser_NewTab_Combo {
             bindings = <&kp LC(T)>;
             key-positions = <13 6>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Window_SnapUp-Combo {
             bindings = <&kp LG(LA(UP_ARROW))>;
             key-positions = <12 7>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Window_SnapDown-Combo {
             bindings = <&kp LG(LA(DOWN_ARROW))>;
             key-positions = <12 17>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Window_SnapLeft-Combo {
             bindings = <&kp LG(LEFT)>;
             key-positions = <12 16>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Window_SnapRight-Combo {
             bindings = <&kp LG(RIGHT)>;
             key-positions = <12 18>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Window_Min-Combo {
             bindings = <&kp LG(DOWN_ARROW)>;
             key-positions = <12 8>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Window_Maxim-Combo {
             bindings = <&kp LG(UP_ARROW)>;
             key-positions = <12 6>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Screen_MoveLeft_Combo {
             bindings = <&kp LG(LS(LEFT))>;
             key-positions = <11 16>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Screen_MoveRight_Combo {
             bindings = <&kp LG(LS(RIGHT))>;
             key-positions = <11 18>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Screen_Close_Combo {
             bindings = <&kp LA(F4)>;
             key-positions = <11 8>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Screen_New_Combo {
             bindings = <&kp LC(N)>;
             key-positions = <11 6>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Desktop_Left_Combo {
             bindings = <&kp LC(LG(LEFT))>;
             key-positions = <10 16>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Desktop_Right_Combo {
             bindings = <&kp LC(LG(RIGHT))>;
             key-positions = <10 16>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Desktop_New_Combo {
             bindings = <&kp LC(LG(D))>;
             key-positions = <10 6>;
-            layers = <4>;
+            layers = <6>;
         };
 
         Nav_Desktop_Close_Combo {
             bindings = <&kp LC(LG(F4))>;
             key-positions = <10 8>;
-            layers = <4>;
+            layers = <6>;
         };
     };
 
@@ -258,7 +253,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Alphas {
             display-name = "Default Layer";
 
             // -----------------------------------------------------------------------------------------
@@ -268,16 +263,16 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&kp Q        &kp W        &kp F           &kp P           &kp G  &kp J  &kp L            &kp U              &kp Y             &mt COLON SEMI
-&mt LC(A) A  &kp R        &mt LEFT_ALT S  &mt LEFT_WIN T  &kp D  &kp H  &mt RIGHT_WIN N  &mt RIGHT_ALT E    &kp I             &kp O
-&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C     &mt LC(V) V     &kp B  &kp K  &kp M            &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
-                          &kp DEL         &kp LEFT_SHIFT  &mo 1  &mo 2  &kp SPACE        &kp RCTRL
+&kp Q        &kp W        &kp F        &kp P           &kp G  &kp J  &kp L        &kp U              &kp Y             &mt COLON SEMI
+&kp A        &kp R        &kp S        &kp T           &kp D  &kp H  &kp N        &kp E              &kp I             &kp O
+&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &kp B  &kp K  &kp M        &mt EXCL QUESTION  &mt COMMA PERIOD  &mt DOUBLE_QUOTES SINGLE_QUOTE
+                          &kp DEL      &kp LEFT_SHIFT  &mo 1  &mo 2  &lt 3 SPACE  &kp RCTRL
             >;
 
             label = "Alpha";
         };
 
-        lower_layer {
+        Numbers {
             display-name = "Num";
 
             // -----------------------------------------------------------------------------------------
@@ -287,14 +282,25 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&kp TILDE    &kp AMPS  &kp HASH       &mt RIGHT_BRACE LEFT_BRACE  &mt GT LT      &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
-&kp PERCENT  &kp EXCL  &kp DOLLAR     &kp AT                      &mt RPAR LPAR  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp GRAVE    &kp PIPE  &kp BACKSLASH  &kp UNDERSCORE              &mt RBKT LBKT  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-                       &kp DEL        &kp LEFT_SHIFT              &trans         &trans             &kp SPACE     &kp RCTRL
+&none         &none      &none         &none           &none      &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
+&sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LEFT_SHIFT  &kp EQUAL  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK
+&none         &none      &none         &kp SLASH       &none      &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+                         &kp DEL       &kp LEFT_SHIFT  &trans     &trans             &kp SPACE     &kp RCTRL
             >;
         };
 
-        raise_layer {
+        Symbols {
+            bindings = <
+&kp TILDE    &kp LBKT  &kp LBRC    &kp LEFT_PARENTHESIS  &kp LT     &kp GT   &kp RIGHT_PARENTHESIS  &kp RBRC   &kp RBKT   &kp MINUS
+&kp PERCENT  &kp EXCL  &kp DOLLAR  &kp AT                &kp EQUAL  &kp DOT  &sk LSHFT              &sk LGUI   &sk LCTRL  &sk LALT
+&kp GRAVE    &kp PIPE  &kp BSLH    &kp FSLH              &kp UNDER  &none    &none                  &none      &none      &kp PLUS
+                       &kp DELETE  &kp LEFT_SHIFT        &trans     &trans   &kp SPACE              &kp RCTRL
+            >;
+
+            label = "Sym";
+        };
+
+        Nav_Current {
             display-name = "Nav";
 
             // -----------------------------------------------------------------------------------------
@@ -311,7 +317,7 @@
             >;
         };
 
-        layer_3 {
+        Settings {
             bindings = <
 &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans      &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans
@@ -342,6 +348,15 @@
             >;
 
             label = "Nav_Morph";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Thumbs_Settings {
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 };
