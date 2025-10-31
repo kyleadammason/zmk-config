@@ -85,7 +85,7 @@
 
             bindings = <
 &none         &none      &mkp RCLK     &mkp LCLK               &none      &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
-&sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LEFT_SHIFT lazy     &kp ASTRK  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LEFT_SHIFT          &kp ASTRK  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
 &none         &none      &none         &sk LA(LC(LEFT_SHIFT))  &kp EQUAL  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
                          &kp DEL       &kp LEFT_SHIFT          &trans     &trans             &kp SPACE     &kp RCTRL
             >;
