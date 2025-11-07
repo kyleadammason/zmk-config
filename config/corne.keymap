@@ -95,7 +95,7 @@
             bindings = <
 &none        &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp BACKSLASH  &kp LT          &kp GT           &kp PIPE  &kp MINUS
 &kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &kp DOT        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp SLASH
-&none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL  &none          &none           &none            &none     &kp PLUS
+&none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL  &none          &kp DOLLAR      &none            &none     &kp PLUS
                         &kp DELETE            &kp LEFT_SHIFT         &trans     &trans         &kp SPACE       &kp RCTRL
             >;
 
