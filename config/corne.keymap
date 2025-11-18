@@ -50,6 +50,11 @@
             key-positions = <14 15>;
             layers = <0>;
         };
+
+        Backspace_Word_Combo {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <18 17>;
+        };
     };
 
     keymap {
