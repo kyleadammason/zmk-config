@@ -57,6 +57,15 @@
         };
     };
 
+    macros {
+        Select_All_And_Copy: Select_All_And_Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A) &kp LC(C)>;
+            label = "SELECT_ALL_AND_COPY";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -89,19 +98,19 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&none         &none      &mkp RCLK     &mkp LCLK               &none      &kp LS(LA(LC(C)))  &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
-&sk LEFT_ALT  &sk LCTRL  &sk LEFT_GUI  &sk LEFT_SHIFT          &kp ASTRK  &kp PERIOD         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&none         &none      &none         &sk LA(LC(LEFT_SHIFT))  &kp EQUAL  &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-                         &kp DEL       &kp LEFT_SHIFT          &trans     &trans             &kp SPACE     &kp RCTRL
+&none           &none         &none         &none                   &kp LS(LA(LC(C)))  &kp ASTRK   &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
+&sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &sk LCTRL               &kp DOLLAR         &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&none           &none         &none         &sk LA(LC(LEFT_SHIFT))  &kp EQUAL          &kp SLASH   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+                              &kp DEL       &kp LEFT_SHIFT          &trans             &trans      &kp SPACE     &kp RCTRL
             >;
         };
 
         Symbols {
             bindings = <
-&none        &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp BACKSLASH  &kp LT          &kp GT           &kp PIPE  &kp MINUS
-&kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK  &kp DOT        &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp SLASH
-&none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL  &none          &kp DOLLAR      &none            &none     &kp PLUS
-                        &kp DELETE            &kp LEFT_SHIFT         &trans     &trans         &kp SPACE       &kp RCTRL
+&none        &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none       &kp ASTRK  &kp LT          &kp GT           &kp PIPE  &kp MINUS
+&kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &kp DOT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp POUND
+&none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL   &kp SLASH  &none           &none            &none     &kp PLUS
+                        &kp DELETE            &kp LEFT_SHIFT         &trans      &trans     &kp SPACE       &kp RCTRL
             >;
 
             label = "Sym";
@@ -149,8 +158,8 @@
 
         Nav_Screen {
             bindings = <
-&none  &none   &none  &none  &none  &none  &kp LC(N)               &kp LA(LS(TAB))  &kp LA(F4)               &none
-&none  &trans  &none  &none  &none  &none  &kp LG(LS(LEFT_ARROW))  &kp LA(TAB)      &kp LS(LG(RIGHT_ARROW))  &none
+&none  &none   &none  &none  &none  &none  &kp LC(N)               &none            &kp LA(F4)               &none
+&none  &trans  &none  &none  &none  &none  &kp LG(LS(LEFT_ARROW))  &kp LA(LC(TAB))  &kp LS(LG(RIGHT_ARROW))  &none
 &none  &none   &none  &none  &none  &none  &none                   &none            &none                    &none
                &none  &none  &none  &none  &trans                  &none
             >;
@@ -158,19 +167,19 @@
 
         Nav_Desktop {
             bindings = <
-&none   &none  &none  &none  &none  &none  &kp LG(LC(D))           &none  &kp LC(LG(F4))           &none
-&trans  &none  &none  &none  &none  &none  &kp LG(LC(LEFT_ARROW))  &none  &kp LG(LC(RIGHT_ARROW))  &none
-&none   &none  &none  &none  &none  &none  &none                   &none  &none                    &none
+&none   &none  &none  &none  &none  &none  &kp LG(LC(D))           &none        &kp LC(LG(F4))           &none
+&trans  &none  &none  &none  &none  &none  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LG(LC(RIGHT_ARROW))  &none
+&none   &none  &none  &none  &none  &none  &none                   &none        &none                    &none
                &none  &none  &none  &none  &trans                  &none
             >;
         };
 
         Nav_Mouse {
             bindings = <
-&none  &none           &msc SCRL_UP    &none            &none  &none  &none     &none     &none     &kp PAGE_UP
-&none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none  &mkp MB1  &mkp MB2  &mkp MB3  &kp PAGE_DOWN
-&none  &none           &none           &trans           &none  &none  &mkp MB4  &mkp MB5  &none     &none
-                       &trans          &none            &none  &none  &trans    &none
+&none  &none           &msc SCRL_UP    &none            &none  &msc SCRL_UP    &none     &none     &none     &kp PAGE_UP
+&none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &msc SCRL_DOWN  &mkp MB1  &mkp MB2  &mkp MB3  &kp PAGE_DOWN
+&none  &none           &none           &trans           &none  &none           &mkp MB4  &mkp MB5  &none     &none
+                       &trans          &none            &none  &none           &trans    &none
             >;
         };
     };
