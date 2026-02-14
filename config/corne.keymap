@@ -119,7 +119,7 @@
         Nav {
             bindings = <
 &none  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &kp LS(LC(O))  &kp C_VOLUME_UP  &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP
-&mo 8  &mo 7         &mo 6             &mo 5               &kp LA(LG(K))  &kp C_VOL_DN     &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_DN
+&none  &mo 8         &mo 6             &mo 5               &kp LA(LG(K))  &kp C_VOL_DN     &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_DN
 &none  &none         &none             &mo 9               &kp LS(LG(S))  &kp C_MUTE       &none     &none         &none      &none
                      &none             &none               &none          &none            &trans    &none
             >;
@@ -140,10 +140,10 @@
 
         Nav_Browser {
             bindings = <
-&none  &none  &none  &none   &none  &none  &kp LC(T)           &kp LS(LC(TAB))  &kp LC(W)            &none
-&none  &none  &none  &trans  &none  &none  &kp LA(LEFT_ARROW)  &kp LC(TAB)      &kp LA(RIGHT_ARROW)  &none
-&none  &none  &none  &none   &none  &none  &none               &none            &none                &none
-              &none  &none   &none  &none  &trans              &none
+&none  &none  &none  &none   &none  &kp LS(LC(T))  &kp LC(T)           &kp LS(LC(TAB))  &kp LC(W)            &none
+&none  &none  &none  &trans  &none  &none          &kp LA(LEFT_ARROW)  &kp LC(TAB)      &kp LA(RIGHT_ARROW)  &none
+&none  &none  &none  &none   &none  &none          &none               &none            &none                &none
+              &none  &none   &none  &none          &trans              &none
             >;
         };
 
