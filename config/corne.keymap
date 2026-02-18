@@ -107,10 +107,10 @@
 
         Symbols {
             bindings = <
-&none        &kp TILDE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none       &kp ASTRK  &kp LT          &kp GT           &kp PIPE  &kp MINUS
-&kp PERCENT  &kp AT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &kp DOT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp POUND
-&none        &none      &kp GRAVE             &kp UNDER              &kp EQUAL   &kp SLASH  &none           &none            &none     &kp PLUS
-                        &kp DELETE            &kp LEFT_SHIFT         &trans      &trans     &kp SPACE       &kp RCTRL
+&none        &kp TILDE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none       &kp ASTRK  &kp LT          &kp GT           &kp PIPE  &kp MINUS
+&kp PERCENT  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &kp DOT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp POUND
+&none        &kp BACKSLASH  &kp GRAVE             &kp UNDER              &kp EQUAL   &kp SLASH  &none           &none            &none     &kp PLUS
+                            &kp DELETE            &kp LEFT_SHIFT         &trans      &trans     &kp SPACE       &kp RCTRL
             >;
 
             label = "Sym";
