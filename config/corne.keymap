@@ -66,6 +66,17 @@
         };
     };
 
+    behaviors {
+        Shift_question_exclaim: Shift_question_exclaim {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_QUESTION_EXCLAIM";
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
