@@ -167,6 +167,17 @@
 
             label = "Browser";
         };
+
+        ColemakDH {
+            label = "Alpha";
+            display-name = "Alpha2";
+            bindings = <
+&kp Q        &kp W        &kp F        &kp P           &kp G  &kp J  &kp L        &kp U                    &kp Y                &kp SEMI
+&kp A        &kp R        &kp S        &kp T           &kp D  &kp H  &kp N        &kp E                    &kp I                &kp O
+&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &kp B  &kp K  &kp M        &Shift_question_exclaim  &Shift_period_comma  &kp SINGLE_QUOTE
+                          &kp DEL      &kp LEFT_SHIFT  &mo 1  &mo 2  &lt 3 SPACE  &kp RCTRL
+            >;
+        };
     };
 
     conditional_layers {
