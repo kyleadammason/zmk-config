@@ -169,8 +169,7 @@
         };
 
         ColemakDH {
-            label = "Alpha";
-            display-name = "Alpha2";
+            label = "Alpha_ColemakDH";
             bindings = <
 &kp Q        &kp W        &kp F        &kp P           &kp G  &kp J  &kp L        &kp U                    &kp Y                &kp SEMI
 &kp A        &kp R        &kp S        &kp T           &kp D  &kp H  &kp N        &kp E                    &kp I                &kp O
