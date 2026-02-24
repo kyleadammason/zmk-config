@@ -130,7 +130,7 @@
 &none           &none         &none         &none                   &kp LS(LA(LC(C)))  &kp ASTRK   &kp N7        &kp N8        &kp NUMBER_9  &kp MINUS
 &sk LEFT_SHIFT  &sk LEFT_ALT  &sk LEFT_GUI  &sk LCTRL               &kp DOLLAR         &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
 &none           &none         &none         &sk LA(LC(LEFT_SHIFT))  &kp EQUAL          &kp SLASH   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-                              &kp DEL       &kp LEFT_SHIFT          &trans             &trans      &kp SPACE     &kp RCTRL
+                              &trans        &trans                  &trans             &trans      &kp SPACE     &trans
             >;
         };
 
@@ -139,7 +139,7 @@
 &none        &kp TILDE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none       &kp ASTRK  &kp LT          &kp GT           &kp PIPE  &kp MINUS
 &kp PERCENT  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR  &kp DOT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp AMPS  &kp POUND
 &none        &kp BACKSLASH  &kp GRAVE             &kp UNDER              &kp EQUAL   &kp SLASH  &none           &none            &none     &kp PLUS
-                            &kp DELETE            &kp LEFT_SHIFT         &trans      &trans     &kp SPACE       &kp RCTRL
+                            &trans                &trans                 &trans      &trans     &kp SPACE       &trans
             >;
 
             label = "Sym";
@@ -175,16 +175,6 @@
             >;
 
             label = "Browser";
-        };
-
-        ColemakDH {
-            label = "Alpha_ColemakDH";
-            bindings = <
-&kp Q        &kp W        &kp F        &kp P           &kp B        &kp J  &kp L        &kp U                    &kp Y                &kp SEMI
-&kp A        &kp R        &kp S        &kp T           &kp G        &kp M  &kp N        &kp E                    &kp I                &kp O
-&mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &kp D           &mt LC(V) V  &kp K  &kp H        &Shift_question_exclaim  &Shift_period_comma  &kp SINGLE_QUOTE
-                          &kp DEL      &kp LEFT_SHIFT  &mo 1        &mo 2  &lt 3 SPACE  &kp RCTRL
-            >;
         };
     };
 
