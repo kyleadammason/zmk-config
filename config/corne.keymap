@@ -67,27 +67,27 @@
     };
 
     behaviors {
-        Shift_question_exclaim: Shift_question_exclaim {
+        MM_Shift_question_exclaim: MM_Shift_question_exclaim {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_QUESTION_EXCLAIM";
+            label = "MM_SHIFT_QUESTION_EXCLAIM";
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        Shift_period_comma: Shift_period_comma {
+        MM_Shift_period_comma: MM_Shift_period_comma {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_PERIOD_COMMA";
+            label = "MM_SHIFT_PERIOD_COMMA";
             bindings = <&kp PERIOD>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
 
-        SelectCopyAll: SelectCopyAll {
+        MM_SelectCopyAll: MM_SelectCopyAll {
             compatible = "zmk,behavior-mod-morph";
-            label = "SELECTCOPYALL";
+            label = "MM_SELECTCOPYALL";
             bindings = <&kp A>, <&Select_All_And_Copy>;
 
             #binding-cells = <0>;
@@ -115,10 +115,10 @@
             //             | DEL | SFT | NUM |   | NAV | SPC | CTL |
 
             bindings = <
-&kp Q           &kp W        &kp F        &kp P           &kp G         &kp J  &kp L        &kp U                    &kp Y                &kp SEMI
-&SelectCopyAll  &kp R        &kp S        &kp T           &kp D         &kp H  &kp N        &kp E                    &kp I                &kp O
-&mt LC(Z) Z     &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &mt LC(Y) B   &kp K  &kp M        &Shift_question_exclaim  &Shift_period_comma  &kp SINGLE_QUOTE
-                             &kp LCTRL    &kp LEFT_SHIFT  &lt 1 DELETE  &mo 2  &lt 3 SPACE  &key_repeat
+&kp Q              &kp W        &kp F        &kp P           &kp G         &kp J  &kp L        &kp U                       &kp Y                   &kp SEMI
+&MM_SelectCopyAll  &kp R        &kp S        &kp T           &kp D         &kp H  &kp N        &kp E                       &kp I                   &kp O
+&mt LC(Z) Z        &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &mt LC(Y) B   &kp K  &kp M        &MM_Shift_question_exclaim  &MM_Shift_period_comma  &kp SINGLE_QUOTE
+                                &kp LCTRL    &kp LEFT_SHIFT  &lt 1 DELETE  &mo 2  &lt 3 SPACE  &key_repeat
             >;
 
             label = "Alpha";
